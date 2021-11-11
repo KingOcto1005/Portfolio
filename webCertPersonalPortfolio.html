@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Personal Portfolio Page
+    </title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        main,footer {
+            margin-left: 10px;
+        }
+        #navbar {
+            position: fixed;
+            background-color: blue;
+            color: orange;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        #navlinks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #barlink {
+            color: orange;
+        }
+
+        #welcome-section {
+            
+            padding: 25px;
+            height: 100vw;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h1,footer {
+            text-align: center;
+        }
+
+        #project1, #project2, #project3, #project4, #project5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        img {
+
+            max-width: 70%;
+            height: auto;
+        }
+
+        figcaption {
+
+            padding: 40px;
+            font-size: 20px;
+        }
+
+
+        @media (max-width: 666px) {
+            #welcome-section {
+                text-align: center;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="navlinks">
+            <a 
+            id="barlink" 
+            href="#welcome-section">
+            <li>
+                Top of page
+            </li>
+            </a>
+            <a 
+            id="barlink" 
+            href="#projects">
+            <li>
+                Projects Section
+            </li>
+        </a>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <section id="welcome-section">
+            <h1>
+                My Personal Portfolio
+            </h1>
+            <section id="projects">
+                <h2 id="project-title">Tribute Page</h2>
+                <section 
+                id="project1" 
+                class="project-title">
+                    <figure>
+                        <img 
+                        src="tributePage.png" 
+                        alt="photo">
+                        <figcaption>
+                            <a href="#">Project Link</a>
+                        </figcaption>
+                    </figure>
+                </section>
+                <br>
+                <h2 id="project-title">Survey Form</h2>
+                <section 
+                id="project2" 
+                class="project-title">
+                    <figure>
+                        <img 
+                        src="" 
+                        alt="photo">
+                        <figcaption>
+                            <a href="#">Project Link</a>
+                        </figcaption>
+                    </figure>
+                </section>
+                <br>
+                <h2 id="project-title">Product Landing Page</h2>
+                <section 
+                id="project3" 
+                class="project-title">
+                    <figure>
+                        <img 
+                        src="productLanding.png" 
+                        alt="photo">
+                        <figcaption>
+                            <a href="#">Project Link</a>
+                        </figcaption>
+                    </figure>
+                </section>
+                <br>
+                <h2 id="project-title">Technical Documentation</h2>
+                <section 
+                id="project4" 
+                class="project-title">
+                    <figure>
+                        <img 
+                        src="technicalDoc.png" 
+                        alt="photo">
+                        <figcaption>
+                            <a href="#">Project Link</a>
+                        </figcaption>
+                    </figure>
+                    
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <a href="#">Link to Github profile</a>
+    </footer>
+</body>
+</html>
