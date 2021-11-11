@@ -10,6 +10,11 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
+            background-image: url('jiujitsulogo.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            
         }
 
         main {
@@ -30,18 +35,22 @@
             justify-content: space-around;
         }
 
-        #barlink {
+        #barlink, #profile-link {
             color: orange;
         }
 
         #welcome-section {
             
-            padding: 25px;
-            height: 100vw;
+            padding-top: 0;
+            margin-top: 0;
+
+            height: 100vh;
+
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 60px;
+            color: yellowgreen;
         }
 
         h1,footer {
@@ -116,7 +125,7 @@
                 </li>
             </a>
             <a 
-            id="barlink"
+            id="profile-link"
             href="https://github.com/KingOcto1005" 
             target="_blank">
                 <li>
@@ -131,11 +140,13 @@
             <h1>
                 My Personal Portfolio
             </h1>
+        </section>
+        
             <section id="projects">
                 <h2 id="project-title">Tribute Page</h2>
                 <section 
                 id="project1" 
-                class="project-title">
+                class="project-tile">
                     <figure>
                         <img 
                         src="tributePage.png" 
@@ -149,7 +160,7 @@
                 <h2 id="project-title">Survey Form</h2>
                 <section 
                 id="project2" 
-                class="project-title">
+                class="project-tile">
                     <figure>
                         <img 
                         src="" 
@@ -163,7 +174,7 @@
                 <h2 id="project-title">Product Landing Page</h2>
                 <section 
                 id="project3" 
-                class="project-title">
+                class="project-tile">
                     <figure>
                         <img 
                         src="productLanding.png" 
@@ -177,7 +188,7 @@
                 <h2 id="project-title">Technical Documentation</h2>
                 <section 
                 id="project4" 
-                class="project-title">
+                class="project-tile">
                     <figure>
                         <img 
                         src="technicalDoc.png" 
@@ -190,7 +201,7 @@
                 </section>
             </section>
             
-        </section>
+        
     </main>
 </body>
 </html>
